@@ -27,13 +27,7 @@
                   ItemsSource="{x:Bind Fonts}"
                   SelectionChanged="FontsCombo_SelectionChanged"
                   Margin="20 40 20 20 "
-                  Grid.Row="0"
-                  FontFamily="Segoe UI">
-            <ComboBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Background="#ecdfec" />
-                </ItemsPanelTemplate>
-            </ComboBox.ItemsPanel>
+                  Grid.Row="0">
             <ComboBox.ItemTemplate>
                 <DataTemplate x:DataType="x:String">
                     <TextBlock FontFamily="{x:Bind}"
